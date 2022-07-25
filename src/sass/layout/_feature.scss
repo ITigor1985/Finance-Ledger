@@ -1,0 +1,138 @@
+.feature {
+  padding-top: 40px;
+  padding-bottom: 105px;
+  overflow: hidden;
+}
+.feature .container {
+  position: relative;
+}
+
+.feature__title {
+  @include font(24px, 700, 35px);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.feature__description {
+  @include font(12px, 400, 21px);
+  margin-bottom: 9px;
+}
+.feature__list {
+  @include font(12px, 400, 21px);
+  list-style: inside;
+  list-style-position: inside;
+  margin-bottom: 96px;
+}
+.feature__img-wrapper {
+  width: 257px;
+  height: 350px;
+  position: absolute;
+  background-image: url(../images/feature/mobile/car.jpg);
+  background-repeat: no-repeat;
+
+  top: 405px;
+  left: 160px;
+  z-index: -1;
+}
+.feature__button {
+  position: relative;
+  min-width: 192px;
+  @include font(14px, 700, 33px);
+  padding-top: 6px;
+  padding-bottom: 5px;
+  background: #ea7c21;
+  color: #fff;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 9px;
+  &:hover,
+  &:active {
+    background: #ffc805;
+    color: #000;
+    box-shadow: inset 3px 4px 6px rgba(0, 0, 0, 0.25), inset 5px 6px 10px #ea7c21;
+  }
+}
+
+.feature__button::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 21px;
+  background-image: url(../images/feature/mobile/arrow.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and(min-width:768px) {
+  .feature {
+    padding-top: 50px;
+    padding-bottom: 130px;
+  }
+
+  .feature__title {
+    @include font(36px, 700, 55px);
+    margin-bottom: 80px;
+  }
+  .feature__description {
+    @include font(14px, 400, 25px);
+    margin-bottom: 7px;
+  }
+  .feature__list {
+    @include font(14px, 400, 25px);
+    margin-bottom: 127px;
+  }
+  .feature__img-wrapper {
+    width: 369px;
+    height: 502px;
+    background-image: url(../images/feature/tablet/car_tablet.jpg);
+
+    top: 330px;
+    left: 360px;
+    z-index: -1;
+  }
+  .feature__button {
+    position: relative;
+    min-width: 263px;
+    @include font(18px, 700, 33px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and(min-width:1440px) {
+  .feature {
+    padding-top: 75px;
+    padding-bottom: 130px;
+  }
+  .feature .container {
+    position: relative;
+  }
+
+  .feature__title {
+    @include font(48px, 700, 70px);
+    margin-bottom: 110px;
+  }
+  .feature__description {
+    width: 678px;
+    @include font(18px, 400, 40px);
+    margin-bottom: 30px;
+  }
+  .feature__list {
+    width: 678px;
+    @include font(18px, 400, 40px);
+    margin-bottom: 0px;
+  }
+  .feature__img-wrapper {
+    width: 523px;
+    height: 710px;
+    position: absolute;
+    background-image: url(../images/feature/desctop/car_desctop.jpg);
+    top: 100px;
+    left: 740px;
+  }
+  .feature__content-wrapper {
+    display: flex;
+  }
+}

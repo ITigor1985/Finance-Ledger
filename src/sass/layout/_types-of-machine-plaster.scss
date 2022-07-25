@@ -1,0 +1,113 @@
+.types-of-machine-plaster{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.types-of-machine-plaster__title{
+    @include font (24px, 900, 35px);
+    text-align: center;
+    margin-bottom: 60px;
+}
+.types-of-machine-plaster__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    & > :last-child{
+        margin-bottom: 0;
+    }
+}
+.types-of-machine-plaster__list-item{
+    margin-bottom: 20px;
+}
+
+.img-wrapper{
+    margin-bottom: 25px;
+}
+.gallery__list-item-img{
+    width: 100%;
+}
+
+.types-of-machine-plaster__list-item-description{
+    @include font (14px, 700, 24px);
+    color: #45464B;
+}
+.reference{
+    padding: 19px 10px;
+    border: 2px solid #2F4377;
+    border-radius: 9px;
+}
+.reference__description{
+    @include font (14px, 500, 30px);
+}
+
+@media screen and (min-width:768px) {
+    .types-of-machine-plaster{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .types-of-machine-plaster__title{
+        @include font (35px, 900, 55px);
+        margin-bottom: 80px;
+    }
+    
+    .types-of-machine-plaster__list-item{
+        margin-bottom: 60px;
+    }
+    
+    .img-wrapper{
+        margin-bottom: 35px;
+    }
+    
+    
+    .types-of-machine-plaster__list-item-description{
+        @include font (18px, 700, 25px);
+    }
+    .reference{
+        padding: 26px 21px;
+    }
+    .reference__description{
+        @include font (16px, 500, 30px);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .types-of-machine-plaster{
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .types-of-machine-plaster__title{
+        @include font (48px, 900, 70px);
+        margin-bottom: 100px;
+    }
+    
+    .types-of-machine-plaster__list-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+    
+    .img-wrapper{
+        width:577px;
+        height:482px;
+        margin-bottom: 35px;
+        margin-right: 45px;
+    }
+
+    .gallery__list-item-img{
+        width:577px;
+        height:482px;
+        
+    }
+    
+    
+    .types-of-machine-plaster__list-item-description{
+        @include font (24px, 700, 55px);
+    }
+    .reference{
+        padding: 44px;
+    }
+    .reference__description{
+        @include font (20px, 500, 30px);
+    }
+}

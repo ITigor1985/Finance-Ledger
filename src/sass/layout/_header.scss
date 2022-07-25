@@ -1,0 +1,263 @@
+.header-mid {
+  position: relative;
+  background-image: linear-gradient(rgba(54, 67, 113, 0.6), rgba(54, 67, 113, 0.6)),
+    url(../images/header/mobile/header_mobile_img.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 721px;
+  padding-top: 235px;
+}
+
+.header-mid__adres {
+  display: none;
+}
+
+.header-mid__title {
+  @include font(48px, 700, 68px);
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #fff;
+}
+.header-mid__description {
+  display: none;
+}
+.header-mid__arrow {
+  display: none;
+}
+
+.header-mid__form {
+  position: absolute;
+  left: 50%;
+  top: 460px;
+  min-width: 298px;
+  max-width: 299px;
+  padding: 18px 20px;
+  background-color: #fff;
+  border-radius: 9px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+}
+.header-mid__form-title {
+  @include font(24px, 900, 30px);
+  text-align: center;
+  color: #2f4377;
+  margin-bottom: 15px;
+}
+.header-mid__form-description {
+  @include font(14px, 300, 19px);
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.header-mid__form-inpute-wrapper {
+  margin-bottom: 20px;
+  & .header-mid__form-inpute {
+    margin-bottom: 20px;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+.header-mid__form-inpute {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #2f4377;
+  padding-left: 11px;
+  border-radius: 9px;
+}
+.header-mid__form-inpute._error {
+  box-shadow: 0 0 15px red;
+}
+.header-mid__form-inpute::placeholder {
+  font-style: italic;
+  @include font(13px, 300, 15px);
+  color: #2f4377;
+}
+
+.header-mid__form-button {
+  @include font(16px, 900, 25px);
+  color: #fff;
+  display: block;
+  min-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ea7c21;
+  border-radius: 9px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active {
+    background: #ffc805;
+    color: #000;
+    box-shadow: inset 3px 4px 6px rgba(0, 0, 0, 0.25), inset 5px 6px 10px #ea7c21;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-mid {
+    background-image: url(../images/header/tablet/header_tablet_img.jpg);
+    background-size: 100% 567px;
+    min-height: 567px;
+    padding-top: 225px;
+  }
+
+  .header-mid__title {
+    @include font(64px, 700, 68px);
+    margin-bottom: 45px;
+    padding-left: 0px;
+  }
+  .header-mid__description {
+    display: block;
+    @include font(24px, 700, 36px);
+    margin-bottom: 120px;
+    color: #ffc805;
+  }
+
+  .header-mid__form-wrapper {
+    background-color: #364371;
+  }
+  .header-mid__form {
+    position: relative;
+    top: 0px;
+    min-width: 614px;
+    margin: 0 0;
+    height: 351px;
+    padding: 0px 0px;
+    background-color: #364371;
+    border-radius: none;
+  }
+
+  .header-mid__form::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -75px;
+    width: 456px;
+    height: 456px;
+    background-image: url(../images/header/tablet/car.png);
+    background-repeat: no-repeat;
+  }
+  .header-mid__form-title {
+    @include font(24px, 900, 30px);
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .header-mid__form-description {
+    width: 450px;
+    @include font(16px, 300, 19px);
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .header-mid__form-inpute-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    & .header-mid__form-inpute {
+      margin-bottom: 20px;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  .header-mid__form-inpute {
+    width: 262px;
+  }
+
+  .header-mid__form-button {
+    display: block;
+    min-width: 262px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-mid {
+    position: relative;
+    background-image: url(../images/header/desktop/header_desktop_img.jpg);
+    background-size: 100% 815px;
+    min-height: 815px;
+    padding-top: 71px;
+  }
+
+  .header-mid__adres {
+    position: relative;
+    display: flex;
+    @include font(24px, 700, 84px);
+    color: #ffc805;
+    padding-left: 93px;
+    margin-bottom: 91px;
+  }
+
+  .header-mid__adres::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    background-image: url(../images/header/desktop/adres.png);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+  .header-mid__title {
+    @include font(72px, 700, 84px);
+    margin-bottom: 45px;
+  }
+  .header-mid__description {
+    display: block;
+    @include font(24px, 700, 84px);
+    margin-bottom: 45px;
+  }
+  .header-mid__arrow {
+    display: block;
+    margin-left: 147px;
+    margin-bottom: 45px;
+  }
+  .header-mid__form {
+    position: relative;
+    min-width: 1239px;
+    padding-top: 71px;
+  }
+  .header-mid__form::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -75px;
+    width: 597px;
+    height: 597px;
+    background-image: url(../images/header/desktop/car_desctop@1x.png);
+    background-repeat: no-repeat;
+  }
+  .header-mid__form-title {
+    @include font(32px, 900, 30px);
+    margin-bottom: 18px;
+  }
+  .header-mid__form-description {
+    width: 609px;
+    margin-bottom: 18px;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+  .header-mid__form-inpute-wrapper {
+    flex-direction: row;
+    margin-bottom: 0px;
+    & .header-mid__form-inpute {
+      margin-bottom: 0px;
+      margin-right: 19px;
+    }
+  }
+  .header-mid__form-button {
+    display: block;
+    min-width: 262px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

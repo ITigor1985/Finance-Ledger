@@ -1,0 +1,233 @@
+@media screen and (max-width: 374px) {
+  .footer__contact {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
+}
+.footer {
+  margin-top: 50px;
+  background: #2f4377;
+}
+.footer-container.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #2f4377;
+  color: white;
+}
+.footer__contacts_wrapper {
+  font-family: Roboto;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  font-family: Roboto;
+  font-weight: 500;
+  @include font(12px, 19px);
+}
+.footer__work-schedule-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  @include font(12px, 16px);
+}
+.footer__contact {
+  margin-right: 58px;
+}
+.footer__contact-item img {
+  margin-right: 5px;
+}
+.footer__work-schedule-item img {
+  margin-right: 5px;
+}
+.footer__contact-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #fff;
+  margin-bottom: 14px;
+}
+.footer__schedule-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #fff;
+  margin-bottom: 14px;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer__soc-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #fff;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.footer__soc-item {
+  display: flex;
+  align-items: center;
+}
+.footer__soc-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+// .link-viber {
+//   margin-right: 30px;
+// }
+.footer__soc-item img {
+  margin-right: 9px;
+}
+.copyright {
+  font-family: Roboto;
+  @include font(14px, 17px);
+  text-align: center;
+}
+.link-viber {
+  font-family: Roboto;
+  @include font(12px, 19px);
+}
+.link-telegram {
+  font-family: Roboto;
+  @include font(12px, 19px);
+}
+
+.footer-nav {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media screen and(min-width:768px) {
+  .footer-container.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__all-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .footer__contact-title {
+    @include font(18px, 24px);
+  }
+  .footer__schedule-title {
+    @include font(18px, 24px);
+  }
+  .footer__soc-title {
+    @include font(18px, 24px);
+  }
+  .footer__contact-link {
+    @include font(14px, 22px);
+  }
+  .footer__work-schedule-item {
+    @include font(14px, 22px);
+  }
+  .copyright {
+    @include font(16px, 17px);
+  }
+  .footer__soc-title {
+    text-align: left;
+  }
+  .footer__soc-item img {
+    margin-right: 15px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and(min-width:1440px) {
+  .footer {
+    padding-bottom: 50px;
+  }
+  .footer-container.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .footer__all-contacts {
+    margin: 0 auto;
+  }
+  .footer__soc {
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .footer__soc-title {
+    text-align: left;
+  }
+  .footer__soc-list {
+    display: flex;
+    justify-content: left;
+  }
+  .copyright {
+    @include font(18px, 24px);
+    position: absolute;
+    bottom: 0px;
+    right: 400px;
+    text-align: left;
+  }
+
+  .footer__contact-title {
+    text-align-last: left;
+    @include font(24px, 32px);
+  }
+  .footer__schedule-title {
+    @include font(24px, 32px);
+  }
+  .footer__soc-title {
+    @include font(24px, 32px);
+  }
+  .footer__contact-link {
+    @include font(18px, 28px);
+  }
+  .footer__work-schedule-item {
+    @include font(18px, 24px);
+  }
+
+  .footer-logo {
+    margin-left: 30px;
+    margin-right: 110px;
+  }
+  .footer__contacts {
+    margin-right: 110px;
+  }
+  .footer__work-schedule {
+    margin-right: 70px;
+  }
+  .perenos {
+    display: block;
+  }
+  .footer-nav {
+    position: absolute;
+    right: 180px;
+    top: 260px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .footer-nav-list1 {
+    @include font(18px, 24px);
+    & > .footer-nav-item {
+      margin-bottom: 9px;
+    }
+  }
+  .footer-nav-list2 {
+    margin-left: auto;
+    @include font(18px, 24px);
+    & > .footer-nav-item {
+      margin-bottom: 9px;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

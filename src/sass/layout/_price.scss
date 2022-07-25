@@ -1,0 +1,126 @@
+.services-and-prices__img-wrapper {
+  width: 100%;
+}
+.services-and-prices {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.services-and-prices__title {
+  @include font(24px, 700, 28px);
+  text-align: center;
+  color: #45464b;
+  margin-bottom: 60px;
+}
+.services-and-prices__img-wrapper img {
+  width: 100%;
+  height: 166px;
+  object-fit: cover;
+}
+.services-and-prices__list-item-img {
+  display: block;
+}
+
+.services-and-prices__list-item-wrapper {
+  padding-left: 15px;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid #2f4377;
+  border-bottom: 2px solid #2f4377;
+  border-right: 2px solid #2f4377;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.services-and-prices__list-item-deskription {
+  @include font(16px, 400, 20px);
+  margin-bottom: 15px;
+}
+.services-and-prices__list-item-cost {
+  @include font(16px, 700, 19px);
+  color: #2f4377;
+}
+
+.services-and-prices__list {
+  & > .services-and-prices__list-item {
+    margin-bottom: 40px;
+  }
+  & > :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .movies.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .services-and-prices__title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 80px;
+  }
+
+  .services-and-prices__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 28px);
+    margin-top: calc(-1 * 30px);
+  }
+  .services-and-prices__list-item {
+    .services-and-prices__list > & {
+      flex-basis: calc(100% / 2 - 28px);
+      margin-left: 28px;
+      margin-top: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .services-and-prices__img-wrapper {
+    width: 295px;
+    height: 166px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services-and-prices {
+    padding-top: 75px;
+    padding-bottom: 20px;
+  }
+  .services-and-prices__title {
+    @include font(48px, 700, 56px);
+    margin-bottom: 100px;
+  }
+
+  .services-and-prices__list-item-deskription {
+    @include font(20px, 400, 26px);
+    margin-bottom: 15px;
+  }
+  .services-and-prices__list-item-cost {
+    @include font(20px, 700, 19px);
+  }
+  .services-and-prices__list-item-wrapper {
+    justify-content: space-around;
+  }
+
+  .services-and-prices__list {
+    margin-left: calc(-1 * 22px);
+    margin-top: calc(-1 * 84px);
+  }
+  .services-and-prices__list-item {
+    .services-and-prices__list > & {
+      flex-basis: calc(100% / 3 - 22px);
+      margin-left: 22px;
+      margin-top: 84px;
+    }
+  }
+
+  .services-and-prices__img-wrapper {
+    width: 398px;
+    height: 394px;
+  }
+  .services-and-prices__img-wrapper img {
+    height: 394px;
+  }
+}

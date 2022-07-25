@@ -1,0 +1,130 @@
+// /* Слайдер */
+// .slick-slider {
+// }
+/* Ограничивающая оболочка */
+.gallery__list .slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.gallery__list .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+// /* Слайд */
+// .slick-slide {
+// }
+// /* Слайд активный */
+// .slick-slide.slick-active {
+// }
+// /* Слайд основной */
+// .slick-slide.slick-current {
+// }
+// /* Слайд по центру */
+// .slick-slide.slick-center {
+// }
+
+// /* Стрелка */
+// .slick-arrow {
+// }
+// /* Стрелка влево */
+// .slick-arrow.slick-prev {
+// }
+// /* Стрелка вправо */
+// .slick-arrow.slick-next {
+// }
+// /* Стрелка не активная */
+// .slick-arrow.slick-disables {
+// }
+
+/* Конкретный слайдер */
+.gallery {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.gallery__title {
+  @include font(24px, 700, 28px);
+  text-align: center;
+  margin-bottom: 60px;
+  color: #45464b;
+}
+
+.gallery__list {
+  position: relative;
+}
+.gallery__list .slick-arrow {
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+.gallery__list .slick-arrow.slick-prev {
+  display: none !important;
+}
+.gallery__list .slick-arrow.slick-next {
+  background-image: url(../images/gallery/mobile/arrow_right.svg);
+  background-repeat: no-repeat;
+  height: 26px;
+  width: 77px;
+  font-size: 0;
+  top: 105%;
+  right: 0;
+}
+
+.slick-track {
+  overflow: hidden;
+}
+
+@media screen and(min-width: 768px) {
+  .gallery {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .gallery__title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 80px;
+  }
+  .gallery__item.slick-slide .gallery__list-item-img {
+    display: block;
+    height: 134px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .gallery__item.slick-slide.slick-current.slick-active .gallery__list-item-img {
+    height: 217px;
+    width: 309px;
+  }
+
+  .gallery__list .slick-arrow.slick-next {
+    background-image: url(../images/gallery/tablet/arrow_right.svg);
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 141px;
+  }
+}
+
+@media screen and(min-width: 1440px) {
+  .gallery {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .gallery__title {
+    @include font(48px, 700, 56px);
+    margin-bottom: 100px;
+  }
+  .gallery .slick-track {
+    height: 384px;
+  }
+  .gallery__item.slick-slide .gallery__list-item-img {
+    min-height: 253px;
+    transition: min-height 0.5s ease-out;
+    // height: 253px;
+    width: 559px;
+  }
+
+  .gallery__item.slick-slide.slick-current.slick-active .gallery__list-item-img {
+    min-height: 384px;
+    transition: min-height 0.5s ease-in;
+    width: 578px;
+  }
+}

@@ -1,0 +1,46 @@
+.our-team {
+  display: none;
+}
+
+@media screen and(min-width:1440px) {
+  .our-team {
+    display: block;
+    padding-top: 75px;
+    padding-bottom: 20px;
+  }
+  .our-team__title {
+    @include font(48px, 700, 56px);
+    text-align: center;
+    color: #45464b;
+    margin-bottom: 100px;
+  }
+  .our-team__team-description {
+    display: flex;
+  }
+  .our-team__description {
+    margin-left: 80px;
+    @include font(18px, 500, 22px);
+  }
+  .our-team__description ul {
+    list-style-type: disc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #3e3e3e;
+  }
+  .our-team__description li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    @include font(16px, 300, 22px);
+  }
+  .name_company {
+    @include font(18px, 700, 22px);
+  }
+  .our-team p {
+    text-indent: 1em;
+  }
+  .our-team .reference {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+}

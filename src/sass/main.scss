@@ -1,0 +1,27 @@
+@import './base/base';
+@import './utils/mixins';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/breakpoints.scss';
+
+@import './components/container';
+@import './components/title';
+
+@import './layout/header-top';
+@import './layout/header';
+@import './layout/what-do-we-offer';
+@import './layout/advantages';
+@import './layout/types-of-machine-plaster';
+@import './layout/feature';
+@import './layout/scheme-of-work';
+@import './layout/our-team';
+@import './layout/price';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/faq';
+@import './layout/form';
+@import './layout/footer';
+@import './layout/backdrop';
+@import './layout/video';
+@import './layout/footer';

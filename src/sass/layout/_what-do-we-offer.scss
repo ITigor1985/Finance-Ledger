@@ -1,0 +1,106 @@
+.what-do-we-offer{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.what-do-we-offer__title{
+    @include font (24px, 700, 35px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.what-do-we-offer__list{
+    & > :last-child{
+        margin-bottom: 0;
+    }
+}
+
+.what-do-we-offer__list-item{
+    margin-bottom: 30px;
+}
+.what-do-we-offer__list-item-description-wrapper::before {
+    content: "";
+    display: block;
+    padding: 20px 0;
+    text-align: center;    
+    height: 120px;    
+    background-size: 87px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+.what-do-we-offer__list-item-description-wrapper.icon1::before{
+    background-image: url(../images/what-do-we-offer/mobile/icons1.png);
+}
+.what-do-we-offer__list-item-description-wrapper.icon2::before{
+    background-image: url(../images/what-do-we-offer/mobile/icons2.png);
+}
+.what-do-we-offer__list-item-description-wrapper.icon3::before{
+    background-image: url(../images/what-do-we-offer/mobile/icons3.png);
+}
+.what-do-we-offer__list-item-description-wrapper.icon4::before{
+    background-image: url(../images/what-do-we-offer/mobile/icons4.png);
+}
+
+.what-do-we-offer__list-item-description-title{
+    text-align: center;
+    font-weight: bold;
+    @include font (18px, 700, 27px);
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+.what-do-we-offer__list-item-description{
+    @include font (12px, 400, 21px);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    
+    .what-do-we-offer{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .what-do-we-offer__title{
+        @include font (36px, 700, 25px);
+        margin-bottom: 50px;
+    }
+
+    .what-do-we-offer__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * 50px);
+      margin-top: calc(-1 * 50px);
+    }
+    .what-do-we-offer__list-item {
+        flex-basis: calc((100% - 2 * 50px) / 2);
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .what-do-we-offer__list-item-description-title{
+        text-align: left;
+    }
+    
+  }
+
+  @media screen and (min-width: 1440px) {
+    .what-do-we-offer__title{
+        @include font (48px, 700, 25px);
+        margin-bottom: 100px;
+    }
+    .what-do-we-offer__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * 40px);
+      margin-top: calc(-1 * 40px);
+    }
+    .what-do-we-offer__list-item {
+        flex-basis: calc((100% - 4 * 40px) / 4);
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .what-do-we-offer__list-item-description{
+        @include font (14px, 400, 21px);
+    }
+  }

@@ -27,6 +27,9 @@
   },
   "dependencies": {
     "data.js": "^0.12.11",
+    "dist": "^0.1.2",
+    "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
     "material-icons": "^1.10.4",
     "slick-carousel": "^1.8.1"
   }

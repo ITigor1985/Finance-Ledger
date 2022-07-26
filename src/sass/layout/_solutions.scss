@@ -1,0 +1,95 @@
+.solutions__img {
+  position: relative;
+  min-height: 220px;
+  background-image: -webkit-image-set(
+    url('../images/solutions/people.webp') 1x,
+    url('../images/solutions/people@2x.webp') 2x,
+    url('../images/solutions/people.jpg') 1x,
+    url('../images/solutions/people@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/solutions/people.webp') 1x,
+    url('../images/solutions/people@2x.webp') 2x,
+    url('../images/solutions/people.jpg') 1x,
+    url('../images/solutions/people@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.solutions__container-content {
+  padding: 40px 30px;
+  background-color: #28a745;
+}
+.solitions__looking {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.solutions__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+.solution__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.solutions__button {
+  padding: 10px 36px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .solutions .container {
+    display: flex;
+  }
+  .solutions__img {
+    min-width: 48%;
+    height: 589px;
+  }
+  .solutions__container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 63px;
+    min-width: 400px;
+  }
+
+  .solitions__looking {
+    font-size: 20px;
+    line-height: 33px;
+  }
+  .solutions__title {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .solution__content {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .solutions__button {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .solutions__img {
+    min-width: 49%;
+    height: 460px;
+  }
+  .solutions__container-content {
+    padding: 80px 64px 80px 20px;
+    align-items: flex-start;
+  }
+}

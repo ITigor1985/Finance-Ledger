@@ -29,10 +29,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin: 0 auto;
+  width: 100vw;
 }
 .header.opacity {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);

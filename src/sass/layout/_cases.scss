@@ -1,0 +1,171 @@
+.cases {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.cases__container-contant {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+.cases__do {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.cases__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.cases__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.cases__container-gallery {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  height: 1096px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cases__gallery-item1 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases1.webp') 1x,
+    url('../images/cases/cases1@2x.webp') 2x,
+    url('../images/cases/cases1.jpg') 1x,
+    url('../images/cases/cases1@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases1.webp') 1x,
+    url('../images/cases/cases1@2x.webp') 2x,
+    url('../images/cases/cases1.jpg') 1x,
+    url('../images/cases/cases1@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cases__gallery-item2 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases2.webp') 1x,
+    url('../images/cases/cases2@2x.webp') 2x,
+    url('../images/cases/cases2.jpg') 1x,
+    url('../images/cases/cases2@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases2.webp') 1x,
+    url('../images/cases/cases2@2x.webp') 2x,
+    url('../images/cases/cases2.jpg') 1x,
+    url('../images/cases/cases2@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cases__gallery-item3 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases3.webp') 1x,
+    url('../images/cases/cases3@2x.webp') 2x,
+    url('../images/cases/cases3.jpg') 1x,
+    url('../images/cases/cases3@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases3.webp') 1x,
+    url('../images/cases/cases3@2x.webp') 2x,
+    url('../images/cases/cases3.jpg') 1x,
+    url('../images/cases/cases3@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cases__gallery-item4 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases4.webp') 1x,
+    url('../images/cases/cases4@2x.webp') 2x,
+    url('../images/cases/cases4.jpg') 1x,
+    url('../images/cases/cases4@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases4.webp') 1x,
+    url('../images/cases/cases4@2x.webp') 2x,
+    url('../images/cases/cases4.jpg') 1x,
+    url('../images/cases/cases4@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cases__gallery-item5 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases5.webp') 1x,
+    url('../images/cases/cases5@2x.webp') 2x,
+    url('../images/cases/cases5.jpg') 1x,
+    url('../images/cases/cases5@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases5.webp') 1x,
+    url('../images/cases/cases5@2x.webp') 2x,
+    url('../images/cases/cases5.jpg') 1x,
+    url('../images/cases/cases5@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cases__gallery-item6 {
+  background-image: -webkit-image-set(
+    url('../images/cases/cases6.webp') 1x,
+    url('../images/cases/cases6@2x.webp') 2x,
+    url('../images/cases/cases6.jpg') 1x,
+    url('../images/cases/cases6@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../images/cases/cases6.webp') 1x,
+    url('../images/cases/cases6@2x.webp') 2x,
+    url('../images/cases/cases6.jpg') 1x,
+    url('../images/cases/cases6@2x.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .cases__container-gallery {
+    height: 314px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .cases__container-gallery {
+    height: 588px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}

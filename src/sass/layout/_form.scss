@@ -1,3 +1,8 @@
+form {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  color: #333333;
+}
 .form__img {
   position: relative;
   min-height: 220px;
@@ -16,4 +21,41 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.form__header {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+.form__inpute {
+  padding-left: 8px;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 100%;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #808080;
+  }
+}
+.form__inpute.name {
+  margin-bottom: 32px;
+}
+.form__inpute.email {
+  margin-bottom: 40px;
+}
+.form__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  background: #28a745;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
 }

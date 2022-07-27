@@ -83,6 +83,20 @@
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .svg__social {
+    fill: white;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  & > a:not(:last-child) {
+    margin-right: 25px;
+  }
   &:hover {
     opacity: 1;
   }

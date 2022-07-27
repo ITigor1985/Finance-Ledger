@@ -5,3 +5,4 @@ import 'jquery/dist/jquery';
 import './js/header';
 import 'lightbox2/dist/js/lightbox';
 import './js/contacts';
+import './js/form';

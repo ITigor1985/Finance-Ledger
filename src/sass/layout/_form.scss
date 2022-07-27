@@ -28,24 +28,62 @@ form {
   line-height: 48px;
   margin-bottom: 32px;
 }
+.form__inpute-wrapper {
+  position: relative;
+  &:hover .form__label {
+    top: -30%;
+    left: 0;
+  }
+}
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__inpute:focus + .form__label,
+.form__inpute:not(:placeholder-shown) + .form__label {
+  top: -30%;
+  left: 0;
+}
 .form__inpute {
+  position: relative;
   padding-left: 8px;
   border: none;
   display: block;
   height: 40px;
   width: 100%;
-  &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #808080;
-  }
 }
 .form__inpute.name {
   margin-bottom: 32px;
 }
 .form__inpute.email {
   margin-bottom: 40px;
+}
+.form__error {
+  display: block;
+  top: 100%;
+  position: absolute;
+  color: red;
+  opacity: 0;
+  padding-left: 18px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-image: url(../images/form/worning.svg);
+    background-size: cover;
+    width: 18px;
+    height: 17px;
+    transform: translateY(-40%);
+  }
 }
 .form__button {
   width: 100%;

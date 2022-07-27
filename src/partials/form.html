@@ -1,10 +1,17 @@
 <div class="form">
   <div class="container">
     <div class="form__img"></div>
-    <form action="" novalidate>
+    <form action="" novalidate autocomplete="off">
       <p class="form__header">Request Callback</p>
-      <input class="form__inpute name" placeholder="Enter your name" type="text" />
-      <input class="form__inpute email" placeholder="Enter email*" required type="text" />
+      <div class="form__inpute-wrapper">
+        <input class="form__inpute name" name="login" type="text" placeholder=" " />
+        <label class="form__label" for="">Enter your name</label>
+      </div>
+      <div class="form__inpute-wrapper">
+        <input class="form__inpute email" name="email" type="email" placeholder=" " />
+        <label class="form__label" for="">Enter email*</label>
+        <p class="form__error">This is required field</p>
+      </div>
       <button class="form__button" type="submit">Send</button>
     </form>
   </div>

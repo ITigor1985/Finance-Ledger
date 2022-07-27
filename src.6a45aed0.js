@@ -20,4 +20,4 @@ document.querySelectorAll('a[href="#"]').forEach(e=>e.addEventListener("click",e
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("lightbox2/dist/css/lightbox"),require("./sass/main.scss"),require("jquery/dist/jquery"),require("./js/header"),require("lightbox2/dist/js/lightbox"),require("./js/contacts");
 },{"lightbox2/dist/css/lightbox":"Opxc","./sass/main.scss":"clu1","jquery/dist/jquery":"juYr","./js/header":"cGsR","lightbox2/dist/js/lightbox":"li7Z","./js/contacts":"Vz8i"}]},{},["Focm"], null)
-//# sourceMappingURL=src.f8ffbeea.js.map
+//# sourceMappingURL=src.6a45aed0.js.map

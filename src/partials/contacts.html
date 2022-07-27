@@ -9,15 +9,20 @@
     </div>
     <ul class="contacts__container-gallery">
       <li class="contacts__gallery-item1 contacts__gallery-item">
-        <picture>
-          <source
-            srcset="./images/contacts/person1.webp 1x, ./images/contacts/person1@2x.webp 2x"
-            type="image/webp"
-          />
-          <source srcset="./images/contacts/person1.jpg 1x, ./images/contacts/person1@2x.jpg 2x" />
+        <div class="contacts__container-backdrop">
+          <picture>
+            <source
+              srcset="./images/contacts/person1.webp 1x, ./images/contacts/person1@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/contacts/person1.jpg 1x, ./images/contacts/person1@2x.jpg 2x"
+            />
 
-          <img class="contacts-person" src="#" alt="person" />
-        </picture>
+            <img class="contacts-person" src="#" alt="person" />
+          </picture>
+          <div class="contacts__backdrop"></div>
+        </div>
         <div class="contacts__container-contact">
           <p class="contacts__name">John Doe</p>
           <p class="contacts__position">President</p>

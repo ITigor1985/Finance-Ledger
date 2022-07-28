@@ -5,5 +5,4 @@ import 'jquery/dist/jquery';
 import 'lightbox2/dist/js/lightbox';
 import './js/smoothScroll';
 import './js/header';
-import './js/contacts';
 import './js/form';

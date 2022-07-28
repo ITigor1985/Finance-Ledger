@@ -13,7 +13,14 @@
     if (email.value === '') {
       return (errorMessage.style.opacity = '1');
     } else {
-      console.log(`Login: ${login.value}, Email: ${email.value}`);
+      let formData = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => window.location.replace('/success'))
+        .catch(error => alert(error));
       event.currentTarget.reset();
       return (errorMessage.style.opacity = '0');
     }

@@ -36,7 +36,7 @@
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   gap: 8px;
-  height: 1096px;
+  min-height: 1096px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -181,7 +181,7 @@
     margin-bottom: 24px;
   }
   .cases__container-gallery {
-    height: 314px;
+    min-height: 314px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 18px;
@@ -197,7 +197,7 @@
   }
 
   .cases__container-gallery {
-    height: 588px;
+    min-height: 588px;
     grid-template-rows: repeat(2, 1fr);
     gap: 24px 21px;
     padding-left: 28px;
